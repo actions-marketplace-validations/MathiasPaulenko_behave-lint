@@ -17,7 +17,7 @@ jobs:
     name: Dependency Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7.0.1
       - uses: astral-sh/setup-uv@v7
       - run: uv sync --all-extras
       - run: uv run pip-audit
